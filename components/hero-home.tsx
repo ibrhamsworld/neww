@@ -1,11 +1,6 @@
 import Image from "next/image";
 import PageIllustration from "@/components/page-illustration";
-import Avatar01 from "@/public/images/avatar-01.jpg";
-import Avatar02 from "@/public/images/avatar-02.jpg";
-import Avatar03 from "@/public/images/avatar-03.jpg";
-import Avatar04 from "@/public/images/avatar-04.jpg";
-import Avatar05 from "@/public/images/avatar-05.jpg";
-import Avatar06 from "@/public/images/avatar-06.jpg";
+import HeroPic from "@/public/heropic.jpg";
 
 export default function HeroHome() {
   return (
@@ -20,49 +15,10 @@ export default function HeroHome() {
               className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]"
               data-aos="zoom-y-out"
             >
-              <div className="-mx-0.5 flex justify-center -space-x-3">
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar01}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar02}
-                  width={32}
-                  height={32}
-                  alt="Avatar 01"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar03}
-                  width={32}
-                  height={32}
-                  alt="Avatar 02"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar04}
-                  width={32}
-                  height={32}
-                  alt="Avatar 03"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar05}
-                  width={32}
-                  height={32}
-                  alt="Avatar 04"
-                />
-                <Image
-                  className="box-content rounded-full border-2 border-gray-50"
-                  src={Avatar06}
-                  width={32}
-                  height={32}
-                  alt="Avatar 05"
-                />
+              <div className="py-2">
+                <span className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+                  Quality Raw Materials
+                </span>
               </div>
             </div>
             <h1
@@ -70,8 +26,8 @@ export default function HeroHome() {
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
-              The website builder you're <br className="max-lg:hidden" />
-              looking for
+              Premium Paint Chemical <br className="max-lg:hidden" />
+              Raw Materials
             </h1>
             <div className="mx-auto max-w-3xl">
               <p
@@ -79,8 +35,9 @@ export default function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay={300}
               >
-                Simple is a modern website builder powered by AI that changes
-                how companies create user interfaces together.
+                Your trusted partner in supplying high-quality chemical raw materials 
+                for paint manufacturing. Reliable sourcing, competitive pricing, and 
+                exceptional service for the coatings industry.
               </p>
               <div className="relative before:absolute before:inset-0 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1]">
                 <div
@@ -89,21 +46,21 @@ export default function HeroHome() {
                   data-aos-delay={450}
                 >
                   <a
-                    className="btn group mb-4 w-full bg-linear-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
-                    href="#0"
+                    className="btn group mb-4 w-full bg-gradient-to-t from-blue-600 to-blue-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-sm hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
+                    href="#contact"
                   >
                     <span className="relative inline-flex items-center">
-                      Start Free Trial{" "}
+                      Request Quote{" "}
                       <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
-                        -&gt;
+                        →
                       </span>
                     </span>
                   </a>
                   <a
                     className="btn w-full bg-white text-gray-800 shadow-sm hover:bg-gray-50 sm:ml-4 sm:w-auto"
-                    href="#0"
+                    href="/sales"
                   >
-                    Learn More
+                    View Sales
                   </a>
                 </div>
               </div>
@@ -115,35 +72,38 @@ export default function HeroHome() {
             data-aos="zoom-y-out"
             data-aos-delay={600}
           >
-            <div className="relative aspect-video rounded-2xl bg-gray-900 px-5 py-3 shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
-              <div className="relative mb-8 flex items-center justify-between before:block before:h-[9px] before:w-[41px] before:bg-[length:16px_9px] before:[background-image:radial-gradient(circle_at_4.5px_4.5px,var(--color-gray-600)_4.5px,transparent_0)] after:w-[41px]">
-                <span className="text-[13px] font-medium text-white">
-                  cruip.com
-                </span>
+            <div className="relative aspect-video rounded-2xl shadow-xl before:pointer-events-none before:absolute before:-inset-5 before:border-y before:[border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] after:absolute after:-inset-5 after:-z-10 after:border-x after:[border-image:linear-gradient(to_bottom,transparent,--theme(--color-slate-300/.8),transparent)1]">
+              <Image
+                src={HeroPic}
+                alt="Paint Chemical Raw Materials"
+                fill
+                className="rounded-2xl object-cover"
+                priority
+              />
+            </div>
+          </div>
+          
+          {/* Stats section */}
+          <div className="mx-auto mt-12 max-w-3xl md:mt-16" data-aos="fade-up">
+            <div className="rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 px-8 py-8 shadow-lg">
+              <div className="grid gap-6 md:grid-cols-3">
+                <div className="text-center">
+                  <div className="mb-2 text-4xl font-bold text-blue-600">500+</div>
+                  <div className="text-sm font-medium text-gray-600">Products Available</div>
+                </div>
+                <div className="text-center">
+                  <div className="mb-2 text-4xl font-bold text-blue-600">15+</div>
+                  <div className="text-sm font-medium text-gray-600">Years Experience</div>
+                </div>
+                <div className="text-center">
+                  <div className="mb-2 text-4xl font-bold text-blue-600">200+</div>
+                  <div className="text-sm font-medium text-gray-600">Happy Clients</div>
+                </div>
               </div>
-              <div className="font-mono text-gray-500 [&_span]:opacity-0">
-                <span className="animate-[code-1_10s_infinite] text-gray-200">
-                  npm login
-                </span>{" "}
-                <span className="animate-[code-2_10s_infinite]">
-                  --registry=https://npm.pkg.github.com
-                </span>
-                <br />
-                <span className="animate-[code-3_10s_infinite]">
-                  --scope=@phanatic
-                </span>{" "}
-                <span className="animate-[code-4_10s_infinite]">
-                  Successfully logged-in.
-                </span>
-                <br />
-                <br />
-                <span className="animate-[code-5_10s_infinite] text-gray-200">
-                  npm publish
-                </span>
-                <br />
-                <span className="animate-[code-6_10s_infinite]">
-                  Package published.
-                </span>
+              <div className="mt-6 border-t border-gray-200 pt-6">
+                <p className="text-center text-sm text-gray-600">
+                  Specializing in Titanium Dioxide, Resins, Solvents, Pigments, and Additives
+                </p>
               </div>
             </div>
           </div>

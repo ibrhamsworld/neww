@@ -1,5 +1,4 @@
 import Image from "next/image";
-import TestimonialImg from "@/public/images/large-testimonial.jpg";
 
 export default function LargeTestimonial() {
   return (
@@ -21,26 +20,22 @@ export default function LargeTestimonial() {
                   fill="#D1D5DB"
                 />
               </svg>
-              <Image
-                className="rounded-full"
-                src={TestimonialImg}
-                width={48}
-                height={48}
-                alt="Large testimonial"
-              />
+              {/* Replace with actual client image or use initials */}
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-600 text-lg font-bold text-white">
+                JC
+              </div>
             </div>
             <p className="text-2xl font-bold text-gray-900">
-              “Simple has simplified my life in more ways than one. From
-              managing my sites to{" "}
-              <em className="italic text-gray-500">keeping track of tasks</em>,
-              it's become my go-to tool for everything.”
+              "We've been sourcing our titanium dioxide and resins from this supplier for over 5 years. Their{" "}
+              <em className="italic text-gray-500">consistent quality and reliable delivery</em>{" "}
+              have been instrumental in maintaining our production schedules and product standards."
             </p>
             <div className="text-sm font-medium text-gray-500">
-              <span className="text-gray-700">Mary Sullivan</span>{" "}
+              <span className="text-gray-700">James Chen</span>{" "}
               <span className="text-gray-400">/</span>{" "}
-              <a className="text-blue-500" href="#0">
-                CTO at Microsoft
-              </a>
+              <span className="text-blue-500">
+                Production Manager at ColorTech Coatings
+              </span>
             </div>
           </div>
         </div>
